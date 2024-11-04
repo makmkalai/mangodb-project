@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="/static/css/style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="add_user">
+        <form class="add_form" method="post">
+            <h2>Student Work Details...</h2>
+            <hr>
+            <label>Enter your Name:</label>
+            <input type="text" readonly name="name" value="{{session['sessionname']}}"
+                class="form-control form-control-sm"><br>
+            <label>Date:</label>
+            <input type="date" name="date"><br><br>
+            <label>Start_Time:</label>
+            <input type="time" name="starttime"><br><br>
+            <label>End_Time:</label>
+            <input type="time" name="endtime" value="00:00"><br><br>
+            <label>Job:</label><br>
+            <input type="text" placeholder="Job" name="job"><br><br>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+</body>
+
+</html>

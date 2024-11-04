@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 580px;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.left_nav {
+    background-color: rgb(181, 189, 189);
+    width: 20%;
+    padding: 20px 50px;
+}
+
+.left_nav h1 {
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.left_nav li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #968e8e;
+}
+
+.left_nav li a {
+    letter-spacing: 3px;
+}
+
+.left_nav li:hover {
+    background-color: rgb(164, 205, 164);
+    text-align: center;
+}
+
+
+/* right Navbar */
+.right_content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.list {
+    padding: 10px 20px;
+    background-color: #8c8888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.list li:hover {
+    background-color: #b0abab;
+}
+
+.sub_list {
+    display: none;
+}
+
+.list li:hover .sub_list{
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    top: 50px;
+    right: 15px;
+    padding: 3px 5px;
+}
+
+
+/*  Student Content */
+.content {
+    padding: 30px 50px;
+    height: 800px;
+    background-color: #8c8888;
+}
+
+.icon {
+    font-size: 100px;
+    color: rgb(165, 155, 155);
+    text-align: center;
+}
+.name_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name_title h1 a i{
+    color: rgb(255, 255, 255);
+    background-color: #af9090;
+    padding: 10px 20px;
+    border-radius: 20%;
+
+}
+
+.std_con h1,h2,h3{
+    color: #6e6161;
+}
+.std_con h1 span{
+    color: rgb(169, 188, 200);
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+.std_con span{
+    color: #c6cce4;
+}
+
+
+/* Student Table content  */
+.table_content {
+    padding: 30px 50px;
+    height: 800px;
+    background-color: #8c8888;
+}
+
+.btn1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.btn a {
+    border: rgb(108, 97, 97);
+    color: white;
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn a:hover {
+    background-color: gray;
+}
+.date_form form{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/* Table design */
+table {
+    width: 100%;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+.dlt_btn{
+    background-color: rgb(211, 99, 99);
+    padding: 2px 15px;
+    border-radius: 20px;    
+}
+.ed_btn{
+    background-color: rgb(123, 210, 141);
+    padding: 2px 15px;
+    color: rgb(118, 117, 117);
+    border-radius: 20px;    
+}
+td{
+    color: rgb(211, 194, 194);
+}
+
+
+/* Add Student Details */
+.add_user {
+    background-color: #af9090;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.add_form {
+    background-color: rgb(196, 171, 171);
+    margin: 30px 0;
+    padding: 30px 50px;
+    border-radius: 30px;
+    box-shadow: 30px 30px 55px #766565;
+}
+
+input[type=number] {
+    border-radius: 10px;
+    padding: 5px 25px;
+}
+
+input[type=date] {
+    border-radius: 10px;
+    border: 0;
+    padding: 5px 25px;
+    width: 100%;
+}
+
+input[type=time] {
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    padding: 5px 25px;
+}
+
+input[type=text] {
+    border-radius: 10px;
+    padding: 5px 25px;
+    width: 100%;
+    border: 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    border: 0 solid gray;
+    background-color: rgb(161, 152, 152);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(231, 168, 168);
+    /* font-weight: 600; */
+}
